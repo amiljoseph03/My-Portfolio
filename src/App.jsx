@@ -24,12 +24,14 @@
 
 import Hero from './components/Hero';
 import About from './components/About';
+import Skill from './components/Skill'
 
 export default function App() {
   return (
     <>
       <Hero />
       <About />
+      <Skill />
     </>
   );
 }
