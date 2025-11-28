@@ -187,7 +187,7 @@ html,body,#root{height:100%;margin:0;background:var(--bg);color:var(--text);font
 /* ........................................................................about...........................................................  */
 
 .about {
-  min-height: 90vh;
+  min-height: 50vh;
   padding: 80px 10%;
   background: #0f0f0f;
   color: white;

@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import gsap from 'gsap';
-import skillsimg from '../assets/skillsimg.jpg';
+import skillsimg from '../assets/skillsimg.png';
 
 const skills = [
   'React',
@@ -49,6 +49,8 @@ export default function SkillCircle() {
   };
 
   return (
+
+    
     <div style={styles.wrapper}>
       {/* Skill Circle */}
       <div style={styles.circle}>
@@ -98,8 +100,8 @@ const styles = {
     position: 'relative',
   },
   image: {
-    width: '180px',
-    height: '180px',
+    width: '250px',
+    height: '250px',
     borderRadius: '50%',
     objectFit: 'cover',
     boxShadow: '0 10px 25px rgba(0,0,0,0.5)',
@@ -107,13 +109,14 @@ const styles = {
     zIndex: 10,
   },
   circle: {
+    
     position: 'absolute',
     width: '0px',
     height: '0px',
   },
   skillItem: {
-    padding: '10px 16px',
-    background: 'rgba(255,255,255,0.15)',
+    padding: '15px 16px',
+    background: 'rgba(42, 100, 155, 0.15)',
     backdropFilter: 'blur(10px)',
     borderRadius: '10px',
     color: '#fff',
