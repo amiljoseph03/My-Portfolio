@@ -207,3 +207,27 @@ html,body,#root{height:100%;margin:0;background:var(--bg);color:var(--text);font
   line-height: 1.7;
   opacity: 0.9;
 }
+/* .........................................projects......................................  */
+
+.projects-section {
+  padding: 60px 20px;
+  color: white;
+  text-align: center;
+}
+
+.projects-title {
+  font-size: 42px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #00eaff;
+  text-shadow: 0 0 10px #00eaff;
+}
+
+/* Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+

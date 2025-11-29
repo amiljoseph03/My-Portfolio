@@ -1,0 +1,105 @@
+
+.projects-container {
+  padding: 60px;
+  background: #020314;
+  color: white;
+}
+
+.project-heading {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 40px;
+  color: cyan;
+}
+
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 14px;
+  transition: 0.3s;
+  backdrop-filter: blur(8px);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+
+.project-img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.project-img-wrapper:hover .project-img {
+  opacity: 0.2;
+}
+
+
+.project-hologram {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 85%;
+  height: auto;
+  padding: 15px;
+  text-align: center;
+
+  background: rgba(0, 255, 255, 0.1);
+  border: 1px solid cyan;
+  border-radius: 12px;
+  box-shadow: 0 0 15px cyan inset;
+  backdrop-filter: blur(10px);
+
+  color: cyan;
+  opacity: 0;
+  transform: scale(0.2);
+  transition: 0.35s ease;
+  pointer-events: none;
+}
+
+.project-img-wrapper:hover .project-hologram {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.project-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.project-tech span {
+  display: inline-block;
+  padding: 5px 10px;
+  background: rgba(0, 255, 255, 0.15);
+  margin: 4px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+
+.project-link {
+  color: cyan;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
