@@ -1,0 +1,126 @@
+.contact-section {
+  padding: 80px 10%;
+  text-align: center;
+  background: #050a13;
+}
+
+.contact-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: cyan;
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+}
+
+.contact-sub {
+  color: #cfcfcf;
+  margin-bottom: 50px;
+  font-size: 1.1rem;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.2);
+}
+
+/* LEFT INFO */
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+  color: white;
+  text-align: left;
+}
+
+.contact-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: cyan;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 18px;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: cyan;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  text-shadow: 0 0 10px cyan;
+}
+
+/* FORM */
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: cyan;
+  box-shadow: 0 0 12px cyan;
+}
+
+.contact-form button {
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: cyan;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #00eaff;
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+}
