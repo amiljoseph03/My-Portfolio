@@ -1,0 +1,94 @@
+.experience-section {
+  padding: 60px 40px;
+  background: #010217;
+  color: #fff;
+}
+
+.experience-heading {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 50px;
+  color: cyan;
+}
+
+
+.experience-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.experience-img {
+  flex: 1 1 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience-img img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 255, 255, 0.3);
+}
+
+
+.experience-cards {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.experience-card {
+  background: rgba(0, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.25);
+  padding: 20px;
+  border-radius: 14px;
+  transition: 0.3s;
+  backdrop-filter: blur(6px);
+}
+
+.experience-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px cyan;
+}
+
+.exp-company {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.exp-role {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #00f5ff;
+}
+
+.exp-duration {
+  font-size: 14px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.exp-desc {
+  font-size: 14px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+
+@media (max-width: 768px) {
+  .experience-container {
+    flex-direction: column;
+  }
+
+  .experience-img img {
+    max-width: 300px;
+  }
+}

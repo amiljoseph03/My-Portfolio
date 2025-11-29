@@ -26,6 +26,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Skill from './components/Skill'
 import Projects from './components/Projects';
+import Experience from './components/Experience';
 
 
 export default function App() {
@@ -33,6 +34,7 @@ export default function App() {
     <>
       <Hero />
       <About />
+      <Experience/>
       <Skill />
       <Projects />
     </>
