@@ -1,12 +1,13 @@
 import React, { useRef } from 'react';
 import gsap from 'gsap';
 import photo2  from '../assets/photo2.jpg'; 
+// import p1  from '../assets/p1.png'; 
 
 export default function Hero({ onEnter, visible = true }) {
   const rootRef = useRef();
 
   const handleEnter = async () => {
-    // play hero exit animation then call onEnter
+ 
     const tl = gsap.timeline({
       defaults: { duration: 0.7, ease: 'power2.inOut' },
     });
@@ -32,11 +33,7 @@ export default function Hero({ onEnter, visible = true }) {
 
       <div className="hero-right">
         <div className="avatar" role="img" aria-label="Amal Joseph">
-          <img
-            src={photo2}
-            alt="Amal"
-            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-          />
+          <img src={photo2} alt="Amal" />
         </div>
       </div>
     </section>
