@@ -33,11 +33,10 @@
   transform: translateY(-8px);
 }
 
-
 .project-img-wrapper {
   position: relative;
   width: 100%;
-  height: 170px;
+  height: 200px;
   overflow: hidden;
   border-radius: 12px;
   margin-bottom: 15px;
@@ -82,10 +81,12 @@
   transform: scale(1);
 }
 
+
 .project-title {
   font-size: 20px;
   margin-bottom: 10px;
 }
+
 
 .project-tech span {
   display: inline-block;
@@ -95,7 +96,6 @@
   border-radius: 8px;
   font-size: 12px;
 }
-
 
 .project-link {
   color: cyan;

@@ -1,11 +1,7 @@
 import React from 'react';
-
-// Import images
 import project1 from '../assets/project1.jpg';
 import project2 from '../assets/project2.jpg';
 import project3 from '../assets/project3.jpg';
-
-// Import CSS
 import '../Projects.css';
 
 
@@ -14,7 +10,7 @@ export default function Projects() {
   const projects = [
     {
       title: 'Portfolio Website',
-      image: project3,
+      image: project1,
       tech: ['React', 'GSAP', 'Tailwind'],
       live: 'https://your-live-link.com',
       desc: 'A futuristic virtual portfolio with dynamic animations and 3D effects.',
@@ -28,7 +24,7 @@ export default function Projects() {
     },
     {
       title: 'AI Chatbot',
-      image: project2,
+      image: project1,
       tech: ['Python', 'NLP', 'React'],
       live: 'https://your-live-link.com',
       desc: 'AI-powered chatbot with real-time NLP interaction and cloud deployment.',
@@ -51,7 +47,7 @@ export default function Projects() {
               </div>
             </div>
 
-      
+        
             <h2 className="project-title">{p.title}</h2>
 
             <div className="project-tech">
