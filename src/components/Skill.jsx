@@ -49,39 +49,52 @@ export default function SkillCircle() {
   };
 
   return (
+    <div>
+  
+      <h2
+        style={{
+          textAlign: 'center',
+          fontSize: '2.5rem',
+          marginBottom: '30px',
+          color: 'cyan',
+          textShadow: '0 0 12px rgba(0,255,255,0.4)',
+        }}
+      >
+        My Tech Stack
+      </h2>
 
-    
-    <div style={styles.wrapper}>
-      {/* Skill Circle */}
-      <div style={styles.circle}>
-        {skills.map((skill, i) => (
-          <div
-            className="skill-item"
-            key={i}
-            ref={(el) => (skillRefs.current[i] = el)}
-            style={{
-              ...styles.skillItem,
-              ...getCirclePosition(i, skills.length, 180),
-            }}
-          >
-            {skill}
-          </div>
-        ))}
+      <div style={styles.wrapper}>
+      
+        <div style={styles.circle}>
+          {skills.map((skill, i) => (
+            <div
+              key={i}
+              className="skill-item"
+              ref={(el) => (skillRefs.current[i] = el)}
+              style={{
+                ...styles.skillItem,
+                ...getCirclePosition(i, skills.length, 180),
+              }}
+            >
+              {skill}
+            </div>
+          ))}
+        </div>
+
+     
+        <img
+          src={skillsimg}
+          alt="center"
+          style={styles.image}
+          onMouseEnter={handleHover}
+          onMouseLeave={handleLeave}
+        />
       </div>
-
-      {/* Center Image */}
-      <img
-        src={skillsimg}
-        alt="center"
-        style={styles.image}
-        onMouseEnter={handleHover}
-        onMouseLeave={handleLeave}
-      />
     </div>
   );
 }
 
-// --- Function to position skills in a circle ---
+
 function getCirclePosition(index, total, radius) {
   const angle = (index / total) * 2 * Math.PI;
   return {
@@ -91,9 +104,10 @@ function getCirclePosition(index, total, radius) {
   };
 }
 
+
 const styles = {
   wrapper: {
-    height: '100vh',
+    height: '80vh',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -109,7 +123,6 @@ const styles = {
     zIndex: 10,
   },
   circle: {
-    
     position: 'absolute',
     width: '0px',
     height: '0px',

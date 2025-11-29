@@ -15,8 +15,8 @@ export default function GetInTouch() {
         <div className="contact-info">
           <h3>Contact Details</h3>
 
-          <p><strong>Email:</strong> amiljoseph@gmail.com</p>
-          <p><strong>Phone:</strong> +91 9876543210</p>
+          <p><strong>Email:</strong> amiljoseph03@gmail.com</p>
+          <p><strong>Phone:</strong> +91 7902514737</p>
           <p><strong>Location:</strong> Kerala, India</p>
 
           <div className="social-icons">
