@@ -140,7 +140,7 @@ html,body,#root{height:100%;margin:0;background:var(--bg);color:var(--text);font
 
 /* ........................................................................about...........................................................  */
 
-.about {
+/* .about {
   min-height: 50vh;
   padding: 80px 10%;
   background: #0f0f0f;
@@ -160,7 +160,52 @@ html,body,#root{height:100%;margin:0;background:var(--bg);color:var(--text);font
   margin: auto;
   line-height: 1.7;
   opacity: 0.9;
+} */
+
+
+
+.about-section {
+  width: 100%;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
 }
+
+.about-content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2.8rem;
+  color: cyan;
+  margin-bottom: 25px;
+  text-shadow: 0 0 12px rgba(0,255,255,0.4);
+}
+
+.about-para {
+  color: #ddd;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.highlight {
+  color: cyan;
+  font-weight: bold;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2.2rem;
+  }
+
+  .about-para {
+    font-size: 1rem;
+  }
+}
+
 /* .........................................projects......................................  */
 
 .projects-section {

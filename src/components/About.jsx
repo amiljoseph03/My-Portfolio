@@ -1,44 +1,67 @@
-import React, { useRef, useEffect } from 'react';
+
+
+import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import '../Styles.css';
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function About() {
-  const aboutRef = useRef();
+  const aboutRef = useRef(null);
 
   useEffect(() => {
-    const el = aboutRef.current;
-
-    // Ensure the content is visible BEFORE animation
-    gsap.set(el, { opacity: 1 });
-
     gsap.fromTo(
-      el,
-      { opacity: 0, y: 80, scale: 0.9 },
+      aboutRef.current,
+      {
+        opacity: 0,
+        rotateX: 60,
+        rotateY: -30,
+        scale: 0.8,
+        y: 80,
+      },
       {
         opacity: 1,
-        y: 0,
+        rotateX: 0,
+        rotateY: 0,
         scale: 1,
-        duration: 1.4,
-        ease: 'power3.out',
+        y: 0,
+        duration: 1.2,
+        ease: 'power4.out',
         scrollTrigger: {
-          trigger: el,
-          start: 'top 90%', // triggers early so animation always happens
-          toggleActions: 'play none none none', // no reverse
-          once: true, // play one time only
+          trigger: aboutRef.current,
+          start: 'top 80%',
+          toggleActions: 'play none none reverse',
         },
       }
     );
   }, []);
 
   return (
-    <section className="about" ref={aboutRef}>
-      <h2>About Me</h2>
-      <p>
-        I'm a Full Stack Developer passionate about building clean, modern, and
-        interactive web applications using the MERN stack.
-      </p>
+    <section className="about-section" ref={aboutRef}>
+      <div className="about-content">
+        <h2 className="about-title">About Me</h2>
+
+        <p className="about-para">
+          {/* Hello! I'm <span className="highlight">Amil Joseph</span>,  */}
+          I am a
+          passionate
+          <strong> MERN Stack Developer</strong> who builds clean and
+          interactive web apps. I love creating responsive interfaces and
+          meaningful user experiences. 
+          I enjoy exploring UI design, animations,
+          and turning ideas into reality.
+        </p>
+
+        {/* <p className="about-para">
+          I love creating responsive interfaces and meaningful user experiences.
+        </p>
+
+        <p className="about-para">
+          I enjoy exploring UI design, animations, and turning ideas into
+          reality.
+        </p> */}
+      </div>
     </section>
   );
 }
