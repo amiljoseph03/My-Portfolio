@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import gsap from 'gsap';
-import photo2  from '../assets/photo2.jpg'; 
+import photo2  from '../assets/photo2.png'; 
 // import p1  from '../assets/p1.png'; 
 
 export default function Hero({ onEnter, visible = true }) {
