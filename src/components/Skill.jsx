@@ -3,13 +3,14 @@ import gsap from 'gsap';
 import skillsimg from '../assets/skillsimg.png';
 
 const skills = [
-  'React',
+  'Php',
   'JavaScript',
+  'Python',
   'Node',
   'MongoDB',
   'HTML5',
   'CSS3',
-  'Php',
+  'React',
   'MySQL',
 ];
 
