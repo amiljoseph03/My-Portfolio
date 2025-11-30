@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import gsap from 'gsap';
-import photo2  from '../assets/photo2.png'; 
+// import photo2  from '../assets/photo2.png'; 
+import myphoto  from '../assets/myphoto.png'; 
 // import p1  from '../assets/p1.png'; 
 
 export default function Hero({ onEnter, visible = true }) {
@@ -34,7 +35,7 @@ export default function Hero({ onEnter, visible = true }) {
 
       <div className="hero-right">
         <div className="avatar" role="img" aria-label="Amal Joseph">
-          <img src={photo2} alt="Amal" />
+          <img src={myphoto} alt="Amal" />
         </div>
       </div>
     </section>
