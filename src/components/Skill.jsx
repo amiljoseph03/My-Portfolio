@@ -7,15 +7,17 @@ const skills = [
   'JavaScript',
   'Node',
   'MongoDB',
-  'HTML',
-  'CSS',
-  'GSAP',
-  'Express',
+  'HTML5',
+  'CSS3',
+  'Php',
+  'MySQL',
 ];
+
 
 export default function SkillCircle() {
   const skillRefs = useRef([]);
 
+  
   const handleHover = () => {
     skillRefs.current.forEach((el, i) => {
       gsap.fromTo(

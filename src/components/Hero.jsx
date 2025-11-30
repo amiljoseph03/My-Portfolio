@@ -27,9 +27,10 @@ export default function Hero({ onEnter, visible = true }) {
         <h1>AMIL JOSEPH</h1>
         <p>Full Stack Developer | MCA Graduate</p>
         <button className="cta-btn" onClick={handleEnter}>
-          Know more
+          Hire Me
         </button>
       </div>
+      
 
       <div className="hero-right">
         <div className="avatar" role="img" aria-label="Amal Joseph">
