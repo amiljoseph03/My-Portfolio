@@ -4,7 +4,7 @@ import project2 from '../assets/project2.jpg';
 import project3 from '../assets/project3.jpg';
 import project4 from '../assets/project4.jpg';
 import project5 from '../assets/project5.jpg';
-import weather from '../assets/weather.jpg';
+// import weather from '../assets/weather.jpg';
 import bmi from '../assets/bmi.jpg';
 import '../Projects.css';
 
@@ -45,13 +45,13 @@ export default function Projects() {
       live: 'https://a-dynamic-digital-clock.netlify.app/',
       desc: 'Dynamic digital clock using JavaScript, displaying hours, minutes, and seconds with live updates.Added dark and light mode toggle for improved user experience.',
     },
-    {
-      title: 'Weather App',
-      image: weather,
-      tech: ['HTML', 'CSS', 'JAVASCRIPT', 'API'],
-      live: 'https://weather-app-six-flax-67.vercel.app/',
-      desc: 'Developed a dynamic weather app using OpenWeatherMap API with geolocation, and interactive UI ',
-    },
+    // {
+    //   title: 'Weather App',
+    //   image: weather,
+    //   tech: ['HTML', 'CSS', 'JAVASCRIPT', 'API'],
+    //   live: 'https://weather-app-six-flax-67.vercel.app/',
+    //   desc: 'Developed a dynamic weather app using OpenWeatherMap API with geolocation, and interactive UI ',
+    // },
     {
       title: 'BMI Calculator',
       image: bmi,
@@ -61,7 +61,7 @@ export default function Projects() {
     },
   ];
 
-  
+
   const [selectedFilter, setSelectedFilter] = useState('All');
   const techFilters = ['All', ...new Set(projects.flatMap((p) => p.tech))];
 
