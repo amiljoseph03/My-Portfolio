@@ -12,6 +12,7 @@ const skills = [
   'CSS3',
   'React',
   'MySQL',
+  'Git,GitHub',
 ];
 
 
