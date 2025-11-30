@@ -15,8 +15,8 @@ export default function Experience() {
     {
       company: 'IDatalytics',
       role: 'Data Analytics Intern',
-      duration: 'Jan 2024 - Mar 2024',
-      desc: 'Performed data cleaning, visualization, and created reports in Power BI and Python.',
+      duration: 'Sep 2024 - Dec 2024',
+      desc: 'Performed data cleaning, visualization, and created reports in Power BI, Tableau, SQL and Python.',
     },
   ];
 
