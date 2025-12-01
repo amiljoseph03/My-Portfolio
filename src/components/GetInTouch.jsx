@@ -21,7 +21,7 @@ export default function GetInTouch() {
 
           <div className="social-icons">
             <a href="#" target="_blank">🌐</a>
-            <a href="#" target="_blank">🐦</a>
+            {/* <a href="#" target="_blank">🐦</a> */}
             <a href="#" target="_blank">📸</a>
             <a href="#" target="_blank">💼</a>
           </div>
