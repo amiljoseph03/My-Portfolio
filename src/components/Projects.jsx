@@ -4,12 +4,20 @@ import project2 from '../assets/project2.jpg';
 import project3 from '../assets/project3.jpg';
 import project4 from '../assets/project4.jpg';
 import project5 from '../assets/project5.jpg';
+import infantcare from '../assets/infantcare.jpg';
 // import weather from '../assets/weather.jpg';
 import bmi from '../assets/bmi.jpg';
 import '../Projects.css';
 
 export default function Projects() {
   const projects = [
+    {
+      title: 'Infantcare - Child Orphanage Management System',
+      image: infantcare,
+      tech: ['Php', 'MySQL'],
+      // live: 'https://blog-website-two-sigma.vercel.app/',
+      desc: 'Child Orphanage Management System  for managing all activities of an orphanage It can make online payments, donations, applications, sponsor items by QR code etc. • Modules: Orphanage, Sponsor, Volunteer, Donation • Features Implemented:  Razorpay (payment integration),User authentication, QR Code, Mail, Chatbot ',
+    },
     {
       title: 'Blogify-Travel Blog Website',
       image: project1,
