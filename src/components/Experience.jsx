@@ -12,12 +12,12 @@ export default function Experience() {
       duration: 'July 2025 - Dec 2025',
       desc: 'Worked on full-stack development projects using React and Node.js, developed dashboards, and optimized APIs.',
     },
-    {
-      company: 'IDatalytics',
-      role: 'Data Analytics Intern',
-      duration: 'Sep 2024 - Dec 2024',
-      desc: 'Performed data cleaning, visualization, and created reports in Power BI, Tableau, SQL and Python.',
-    },
+    // {
+    //   company: 'IDatalytics',
+    //   role: 'Data Analytics Intern',
+    //   duration: 'Sep 2024 - Dec 2024',
+    //   desc: 'Performed data cleaning, visualization, and created reports in Power BI, Tableau, SQL and Python.',
+    // },
   ];
 
   return (
