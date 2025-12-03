@@ -23,7 +23,7 @@ export default function Projects() {
       image: project1,
       tech: ['React', 'Firebase', 'Tailwind'],
       live: 'https://blog-website-two-sigma.vercel.app/',
-      desc: 'A futuristic virtual portfolio with dynamic animations and 3D effects.',
+      desc: 'Developed a blog uploading website using React with a clean and responsive UI, Implemented Cloudinary for fast and optimized image uploads. Used Firebase Realtime Database to store and manage blog text content with real-time updates. Added Firebase Authentication for secure user signup and login. ',
     },
     {
       title: 'Resume Builder',
