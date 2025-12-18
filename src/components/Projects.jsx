@@ -81,7 +81,7 @@ export default function Projects() {
   const [selectedFilter, setSelectedFilter] = useState('All');
   const techFilters = ['All', ...new Set(projects.flatMap((p) => p.tech))];
 
-  // Filter 
+ 
   const filteredProjects =
     selectedFilter === 'All'
       ? projects
