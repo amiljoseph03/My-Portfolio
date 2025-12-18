@@ -51,7 +51,7 @@ export default function Projects() {
       title: 'Home Decor',
       image: homedecor,
       tech: ['Next Js'],
-      live: 'https://e-commerce-product-listing-n3wfk3nrp-amils-projects-61c27df6.vercel.app/',
+      live: 'https://e-commerce-product-listing-indol.vercel.app/',
       desc: 'E-Commerce web application for listing home decor items.',
     },
     {
