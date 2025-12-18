@@ -13,13 +13,6 @@ import '../Projects.css';
 export default function Projects() {
   const projects = [
     {
-      title: 'Infantcare - Child Orphanage Management System',
-      image: infantcare,
-      tech: ['Php', 'MySQL'],
-      // live: 'https://blog-website-two-sigma.vercel.app/',
-      desc: 'Child Orphanage Management System  for managing all activities of an orphanage It can make online payments, donations, applications, sponsor items by QR code etc. • Modules: Orphanage, Sponsor, Volunteer, Donation • Features Implemented:  Razorpay (payment integration),User authentication, QR Code, Mail, Chatbot ',
-    },
-    {
       title: 'Blogify-Travel Blog Website',
       image: project1,
       tech: ['React', 'Firebase', 'Tailwind'],
@@ -53,6 +46,13 @@ export default function Projects() {
       tech: ['Next Js'],
       live: 'https://e-commerce-product-listing-indol.vercel.app/',
       desc: 'E-Commerce web application for listing home decor items.',
+    },
+    {
+      title: 'Infantcare - Child Orphanage Management System',
+      image: infantcare,
+      tech: ['Php', 'MySQL'],
+      // live: 'https://blog-website-two-sigma.vercel.app/',
+      desc: 'Child Orphanage Management System  for managing all activities of an orphanage It can make online payments, donations, applications, sponsor items by QR code etc. • Modules: Orphanage, Sponsor, Volunteer, Donation • Features Implemented:  Razorpay (payment integration),User authentication, QR Code, Mail, Chatbot ',
     },
     {
       title: 'Dynamic Digital Clock',
