@@ -5,6 +5,7 @@ import project3 from '../assets/project3.jpg';
 import project4 from '../assets/project4.jpg';
 import project5 from '../assets/project5.jpg';
 import infantcare from '../assets/infantcare.jpg';
+import homedecor from '../assets/homedecor.jpg';
 // import weather from '../assets/weather.jpg';
 import bmi from '../assets/bmi.jpg';
 import '../Projects.css';
@@ -45,6 +46,13 @@ export default function Projects() {
       tech: ['React'],
       live: 'https://dreamy-car-567004.netlify.app/',
       desc: 'Responsive React car showcase with optimized UI.',
+    },
+    {
+      title: 'Home Decor',
+      image: homedecor,
+      tech: ['Next Js'],
+      live: 'https://e-commerce-product-listing-n3wfk3nrp-amils-projects-61c27df6.vercel.app/',
+      desc: 'E-Commerce web application for listing home decor items.',
     },
     {
       title: 'Dynamic Digital Clock',
