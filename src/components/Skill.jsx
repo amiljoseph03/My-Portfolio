@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import gsap from 'gsap';
-import skillsimg from '../assets/skillsimg.png';
+import skill from '../assets/skill.jpg';
 
 const skills = [
   'Php',
@@ -87,7 +87,7 @@ export default function SkillCircle() {
 
      
         <img
-          src={skillsimg}
+          src={skill}
           alt="center"
           style={styles.image}
           onMouseEnter={handleHover}
