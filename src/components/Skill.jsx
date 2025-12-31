@@ -2,24 +2,37 @@ import React, { useRef } from 'react';
 import gsap from 'gsap';
 import skill from '../assets/skill.jpg';
 
-const skills = [
-  'Php',
-  'JavaScript',
-  'Python',
-  'Node',
-  'MongoDB',
-  'HTML5',
-  'CSS3',
-  'React',
-  'MySQL',
-  'Git,GitHub',
-];
+import php from '../assets/skills/php.jpg';
+import js from '../assets/skills/js.jpg';
+import python from '../assets/skills/python.jpg';
+import node from '../assets/skills/node.jpg';
+import mongo from '../assets/skills/mongo.jpg';
+import html from '../assets/skills/html.jpg';
+import css from '../assets/skills/css.jpg';
+import react from '../assets/skills/react.jpg';
+import mysql from '../assets/skills/mysql.jpg';
+import git from '../assets/skills/git.jpg';
 
+
+const skills = [
+  { name: 'PHP', icon: php },
+
+  { name: 'Python', icon: python },
+  { name: 'MySQL', icon: mysql },
+
+  { name: 'MongoDB', icon: mongo },
+  { name: 'HTML5', icon: html },
+  { name: 'CSS3', icon: css },
+  { name: 'Node', icon: node },
+  { name: 'React', icon: react },
+  
+  { name: 'JavaScript', icon: js },
+  { name: 'GitHub', icon: git },
+];
 
 export default function SkillCircle() {
   const skillRefs = useRef([]);
 
-  
   const handleHover = () => {
     skillRefs.current.forEach((el, i) => {
       gsap.fromTo(
@@ -54,7 +67,6 @@ export default function SkillCircle() {
 
   return (
     <div>
-  
       <h2
         style={{
           textAlign: 'center',
@@ -68,24 +80,22 @@ export default function SkillCircle() {
       </h2>
 
       <div style={styles.wrapper}>
-      
         <div style={styles.circle}>
           {skills.map((skill, i) => (
             <div
               key={i}
-              className="skill-item"
               ref={(el) => (skillRefs.current[i] = el)}
               style={{
                 ...styles.skillItem,
                 ...getCirclePosition(i, skills.length, 180),
               }}
             >
-              {skill}
+              <img src={skill.icon} alt={skill.name} style={styles.logo} />
+              <span style={styles.skillName}>{skill.name}</span>
             </div>
           ))}
         </div>
 
-     
         <img
           src={skill}
           alt="center"
@@ -98,7 +108,6 @@ export default function SkillCircle() {
   );
 }
 
-
 function getCirclePosition(index, total, radius) {
   const angle = (index / total) * 2 * Math.PI;
   return {
@@ -107,7 +116,6 @@ function getCirclePosition(index, total, radius) {
     top: `${radius * Math.sin(angle)}px`,
   };
 }
-
 
 const styles = {
   wrapper: {
@@ -132,19 +140,33 @@ const styles = {
     height: '0px',
   },
   skillItem: {
-    padding: '15px 16px',
+    minWidth: '95px',
+    padding: '12px 10px',
     background: 'rgba(42, 100, 155, 0.15)',
     backdropFilter: 'blur(10px)',
-    borderRadius: '10px',
-    color: '#fff',
+    borderRadius: '12px',
+    display: 'flex',
+    flexDirection: 'column', // 👈 vertical layout
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: '6px',
     opacity: 0,
     pointerEvents: 'none',
     transform: 'translate(-50%, -50%) scale(0)',
-    fontSize: '16px',
     boxShadow: '0 5px 10px rgba(255,255,255,0.2)',
   },
 
-
-
-  
+  logo: {
+    width: '42px',
+    height: '42px',
+    objectFit: 'contain',
+    filter: 'drop-shadow(0 0 8px rgba(0,255,255,0.6))',
+  },
+  skillName: {
+    color: '#fff',
+    fontSize: '13px',
+    fontWeight: '500',
+    textAlign: 'center',
+    whiteSpace: 'nowrap',
+  },
 };
